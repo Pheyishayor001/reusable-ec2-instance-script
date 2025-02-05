@@ -18,15 +18,17 @@ AMI = "" # Required AMI ID
 number_of_instance = 1 # Default: 1
 key_name = "" # Required key pair name (without .pem)
 
-USAGE:
+## USAGE:
+
 Initialize terraform: terraform init
 
-Plan deployment: terraform plan
+Plan deployment: `terraform plan`
 
-Apply configuration: terraform apply --auto-approve
+Apply configuration: `terraform apply --auto-approve`
 
-Destroy resource (when needed): terraform destroy --auto-approve
+Destroy resource (when needed): `terraform destroy --auto-approve`
 
-Notes
+## Notes
+
 Ensure the specified AMI is available in the selected region.
 The key_name must exist in your AWS account.
